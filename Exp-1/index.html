@@ -2,73 +2,86 @@
 <html>
 
 <head>
-    <title>Responsive Web Page using Bootstrap Grid</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Web Page using Bootstrap Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <style>
-        header {
-            background-color: aquamarine;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style>
+    header {
+      background: linear-gradient(90deg, aquamarine, teal);
+      color: white;
+      text-align: center;
+      padding: 40px 15px;
+    }
 
-        footer {
-            background-color: grey;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    footer {
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h2>My Website</h2>
-    </header>
+  <!-- Hero Header -->
+  <header>
+    <h1 class="fw-bold">Welcome to My Website</h1>
+    <p class="lead">A simple responsive layout using Bootstrap</p>
+  </header>
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <a class="navbar-brand ms-3" href="#">Website</a>
-        <ul class="navbar-nav ms-auto me-3">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h4>item 1</h4>
-                <p>
-                    This is the first column.
-                    On small devices the column occupies full width, while on medium and large devices it occupies half width using
-                    Bootstrap grid classes. </p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <h4>item 2</h4>
-                <p>
-                    This is the second column.
-                    Bootstrap grid system helps to create responsive layout.
-                </p>
-            </div>
-            </div>
-            </div>
-            
-            <footer>
-                <p>Copyright © 2026 My Website</p>
-            </footer>
-            </body>
+  <!-- Content Section -->
+  <div class="container mt-5">
+    <div class="row g-4">
+      <div class="col-md-6 col-sm-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title text-primary">Item 1</h4>
+            <p class="card-text">
+              This is the first column. On small devices it takes full width, while on medium and larger screens it takes half width.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title text-success">Item 2</h4>
+            <p class="card-text">
+              This is the second column. Bootstrap grid system helps to create responsive layouts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Website | Built with Bootstrap</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

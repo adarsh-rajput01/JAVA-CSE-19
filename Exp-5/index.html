@@ -94,3 +94,24 @@ total+=emp.salary;
 }
 document.getElementById("result").innerHTML="Total Salary = "+total;
 }
+function averageSalary(){
+let total=0;
+for(let emp of employees){
+total+=emp.salary;
+}
+let avg=total/employees.length;
+document.getElementById("result").innerHTML="Average Salary = "+avg;
+}
+function countDepartment(){
+let dept=prompt("Enter Department Name");
+let count=0;
+for(let emp of employees){
+if(emp.department==dept){
+count++;
+}
+}
+document.getElementById("result").innerHTML="Employees in "+dept+" = "+count;
+}
+</script>
+</body>
+</html>
